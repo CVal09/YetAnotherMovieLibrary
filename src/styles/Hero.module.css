@@ -1,0 +1,30 @@
+
+
+
+.mainContainer {
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: rgb(67, 79, 98);
+    background-blend-mode: overlay;
+}
+
+.mainContainer h1 {
+    font-size: 4.5rem;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.mainContainer h3 {
+    font-size: 1.5rem;
+    margin-bottom: -1rem;
+    color: lightgray;
+    text-align: left;
+}

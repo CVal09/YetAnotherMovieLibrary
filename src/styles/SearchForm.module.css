@@ -1,0 +1,21 @@
+
+
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mainContainer input {
+    width: 20rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: .8rem 1rem;
+}
+
+.mainContainer button {
+    padding: .7rem 2rem;
+}
