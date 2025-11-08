@@ -24,7 +24,6 @@ export default function Home() {
     return (
         <section className={styles.mainContainer}>
             <Hero />
-            <h1>Prova</h1>
             <ContentView dataSet={nowPlaying} sectionTitle={"Now Playing"} contentType={"movie"}/>
             <ContentView dataSet={popularItems.filter(content => content.type === "movie")} sectionTitle={"Popular Movies"} contentType={"movie"}/>
             <ContentView dataSet={popularItems.filter(content => content.type === "tv")} sectionTitle={"Popolar Shows"} contentType={"tv"}/>
