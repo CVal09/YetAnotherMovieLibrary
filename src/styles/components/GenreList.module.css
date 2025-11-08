@@ -1,0 +1,39 @@
+
+
+.mainContainer {
+    width: 50%;
+    height: auto;
+    margin: 2rem 0;
+}
+
+
+.itemContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-top: 2rem 0;
+}
+
+
+.itemStyle {
+    display: flex;
+    align-content: center;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 1rem;
+}
+
+.itemStyle:hover {
+    border-color: gray;
+    cursor: pointer;
+}
+
+.mainContainer h2 {
+    margin-bottom: .5rem;
+    text-align: left;
+}

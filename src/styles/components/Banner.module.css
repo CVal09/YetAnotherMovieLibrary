@@ -1,0 +1,32 @@
+
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid rgba(211, 211, 211, 0.731);
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px whitesmoke;
+    margin-bottom: 1rem;
+}
+
+.mainContainer img {
+    width: 10%;
+    height: auto;
+    border-radius: 8px;
+    padding-right: .5rem;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: .9rem;
+    padding: .5rem .5rem .5rem 0;
+}

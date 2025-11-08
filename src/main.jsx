@@ -6,6 +6,8 @@ import { RouterProvider, createBrowserRouter} from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import { store } from './app/store.js'
 import { Provider } from 'react-redux'
+import ShowResults from './pages/ShowResults.jsx'
+import ContentDetails from './pages/ContentDetails.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,14 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />
+      },
+      {
+        path: 'show-results',
+        element: <ShowResults />
+      },
+      {
+        path: 'content/:type/:id',
+        element: <ContentDetails />
       }
     ]
   }

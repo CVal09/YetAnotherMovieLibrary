@@ -1,7 +1,6 @@
 
-import styles from '../styles/Header.module.css'
+import styles from '../styles/components/Header.module.css'
 import Navbar from '../components/Navbar'
-import SearchForm from '../components/SearchForm'
 import logo from '../assets/logo.png'
 
 

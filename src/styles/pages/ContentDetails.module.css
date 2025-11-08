@@ -1,0 +1,58 @@
+
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 600px;
+    margin-top: 10rem;
+}
+
+.infoBox img {
+    height: 100%;
+    width: auto;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    height: 100%;
+    padding: 3rem 2rem;
+    gap: 1rem;
+}
+
+.ratingBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.ratingBox span {
+    margin: 1rem 0;
+    background-color: rgb(216, 141, 0);
+    padding: .5rem;
+    border-radius: 100%;
+    color: white;
+    aspect-ratio: 1;
+    align-content: center;
+    border: 3px solid rgba(0, 0, 0, 0.567);
+    font-weight: bold;
+}

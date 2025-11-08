@@ -1,32 +1,32 @@
-import { useEffect } from "react"
-import { getPopularShows } from '../api/tmdbApi'
-import Navbar from "../components/Navbar"
+import { useEffect, useState } from "react"
 import Hero from "../components/Hero"
-import SearchForm from "../components/SearchForm"
 import { useDispatch } from "react-redux"
-import { manageContent } from "../features/tmdbSlice"
+import { fetchMediaGenres, fetchPopular, fetchNowPlaying } from "../features/tmdbSlice"
 import ContentView from "../components/ContentView"
-import styles from '../styles/Home.module.css'
+import styles from '../styles/pages/Home.module.css'
 import { useSelector } from "react-redux"
+import GenreList from "../components/GenreList"
 
 
 export default function Home() {
 
     const dispatch = useDispatch()
-    const data = useSelector((state) => state.tmdb.popularShowList)
+    const popularItems = useSelector((state) => state.tmdb.popularItems)
+    const mediaGenres = useSelector((state) => state.tmdb.mediaGenres)
+    const nowPlaying = useSelector((state) => state.tmdb.nowPlayingMovies)
 
     useEffect(() => {
-        const fetchData = async () => {
-            const popularShowsData = await getPopularShows()
-            dispatch(manageContent(popularShowsData.results))
-        }
-        fetchData()
+        if (!popularItems.length) dispatch(fetchPopular())
+        if (!mediaGenres.length) dispatch(fetchMediaGenres())
+        if (!mediaGenres.length) dispatch(fetchNowPlaying())
     },[])
 
     return (
         <section className={styles.mainContainer}>
             <Hero />
-            <ContentView dataSet={data} sectionTitle={"Ultime uscite"}/>
+            <ContentView dataSet={nowPlaying} sectionTitle={"Now Playing"} contentType={"movie"}/>
+            <ContentView dataSet={popularItems.filter(content => content.type === "movie")} sectionTitle={"Popular Movies"} contentType={"movie"}/>
+            <ContentView dataSet={popularItems.filter(content => content.type === "tv")} sectionTitle={"Popolar Shows"} contentType={"tv"}/>
         </section>
     )
 }

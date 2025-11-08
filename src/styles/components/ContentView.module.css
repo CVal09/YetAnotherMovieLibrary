@@ -1,0 +1,45 @@
+
+
+
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0 25%;
+    background-image: url(../assets/contentView-bg.png);
+    background-color: rgba(255, 255, 255, 0.078);
+    background-size: contain;
+    background-position: bottom;
+    margin-bottom: 1rem;
+}
+
+.textStyle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-bottom: .5rem;
+}
+
+.textStyle h2 {
+    text-align: left;
+    text-anchor: middle;
+    margin-bottom: .5rem;
+}
+
+.gridStyle {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.202);
+    border-radius: 8px;
+    padding: 1rem;
+}

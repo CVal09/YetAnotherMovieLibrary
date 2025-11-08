@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
-import styles from '../styles/Hero.module.css'
+import styles from '../styles/components/Hero.module.css'
 import SearchForm from '../components/SearchForm'
 
 
 export default function Hero() {
 
-    const data = useSelector((state) => state.tmdb.popularShowList)
-
+    const data = useSelector((state) => state.tmdb.popularItems)
     const [index, setIndex] = useState(0)
 
     useEffect(() => {
