@@ -10,7 +10,7 @@ export default function Navbar() {
 
     return (
         <nav className={styles.mainContainer}>
-            <Link to={'/'} onClick={() => dispatch(resetSearch())}>Home</Link>
+            <Link to={'/'} onClick={() => dispatch(resetSearch())}>Home Page</Link>
         </nav>
     )
 }
